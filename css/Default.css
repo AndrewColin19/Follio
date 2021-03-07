@@ -1,3 +1,132 @@
-h1{
-    color:blue;
+*{
+    margin: 0;
+    padding: 0;
 }
+html body{
+    width: 100%;
+    scrollbar-width: none;
+    scrollbar-color: rgba(0,0,0,0) ;
+}
+
+body{
+    background: url("../assets/background/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar { width: 0 !important }
+
+.section .contain{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contain{
+    width: 100%;
+    height: 100%;
+}
+/*header*/
+.header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header .logo-and-title{
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 40%;
+}
+/*fin header*/
+/*desc bts*/
+.desc-bts{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 80%;
+    color:white;
+    text-align: center;
+    border:1px solid rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.desc-bts .global-desc{
+    padding: 0 10% 0 10%;
+}
+.desc-bts .global-desc .global-title{
+    margin: 2% auto;
+}
+.desc-bts .global-desc .global-text{
+    padding: auto 10%;
+}
+.desc-bts .spe-card{
+    display: flex;
+    flex-direction: row;
+}
+.desc-bts .spe-card .card{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1% 1%;
+    border-radius: 5px;
+    border:1px solid rgba(255, 255, 255, 0.7);
+}
+.desc-bts .spe-card .card .card-title{
+    margin: 5% 0 0 0;
+}
+.desc-bts .spe-card .card .card-desc{
+    margin: 5% 0 5% 0; 
+}
+/*fin desc bts*/
+/*project*/
+.project{
+    width: 80%;
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.3);
+    border:1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.project .project-title{
+    margin: 2% auto;
+}
+.project .project-content-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project .project-box {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.075);
+    width: 346px;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #C7C7D0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+.project .project-box a{
+    text-decoration: none;
+    color: white;
+}
+  
+.project .project-box img {
+    width: 100%;
+    height: auto;
+}
+  
+.project .project-box p {
+    padding-top: 20px;
+    text-align: center;
+}
+/*fin project*/

@@ -1,9 +1,113 @@
 <html>
     <head>
         <title>Home Page</title>
-        <link rel="stylesheet" type="text/css" href="css/Default.css">
+        <link rel="stylesheet" type="text/css" href="css/default.css">
     </head>
     <body>
-        <h1>Hello World</h1>
+        <div id="fullpage">
+            <div class="section">
+                <div class="header">
+                    <img src="assets/background/header_img.jpg" alt="" />
+                    <div class="logo-and-title">
+                        <h1 class="title">Mon PorteFollio</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="contain">
+                    <div class="desc-bts">
+                        <div class="global-desc">
+                            <h2 class="global-title">Le BTS Service Imformatique aux Organisation</h2>
+                            <p class="global-text">Le BTS Services Informatiques aux Organisations est un diplôme recconu par l'état de
+                                niveau BAC+2.
+                                Il remplace depuis Septembre 2011, l'ancien BTS IG (Informatique de gestion).
+                                En effet, cette nouvelle formule réponds aux attentes de la profession en matière de qualification.
+                                Le programme a évolué en fonction de la place et du rôle des TIC (Technologies de l'Information et de la
+                                Communication)
+                                Et propose deux spécialités bien distinctes : Le BTS SIO Option SISR et le BTS SIO Option SLAM.</p>
+                        </div>
+                        <div class="spe-card">
+                            <div class="card">
+                                <h2 class="card-title">SISR</h2>
+                                <h2 class="card-subtitle">Solutions d’infrastructure, systèmes et réseaux</h2>
+                                <p class="card-desc">La spécialisation SISR du BTS SIO permet d’apprendre un métier qui consiste à
+                                    installer,
+                                    configurer et gérer les équipements et les réseaux informatiques.
+                                    Cela signifie intervenir sur la conception, la mise en place,
+                                    le déploiement et la maintenance de programmes destinés à la gestion au sein d’une organisation.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">SLAM</h2>
+                                <h2 class="card-subtitle">Solutions Logicielles et Applications Métier</h2>
+                                <p class="card-desc">La spécialisation SLAM du BTS SIO est elle plus orientée Développement.
+                                    Elle permet d'apprendre à réaliser des logiciels, sites webs, applications mobiles,
+                                    mais aussi de rédiger des documentations techniques liées à celles-ci.
+                                    De plus, elle permet d'apprendre à former des utilisateurs pour gérer la maintenance des
+                                    applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="contain">
+                    <div class="project">
+                        <h1 class="project-title">Project</h1>
+                        <div class="project-content-box">
+                            <div class="project-box">
+                                <a href="#">
+                                    <img src="assets/components/img_test.jpg" />
+                                    <p>Created a site for a local business using the bootstrap framework.</p>
+                                </a>
+                            </div>
+                            <div class="project-box">
+                                <a href="#">
+                                    <img src="assets/components/img_test.jpg" />
+                                    <p>Created a site for a local business using the bootstrap framework.</p>
+                                </a>
+                            </div>
+                            <div class="project-box">
+                                <a href="#">
+                                    <img src="assets/components/img_test.jpg" />
+                                    <p>Created a site for a local business using the bootstrap framework.</p>
+                                </a>
+                            </div>
+                            <div class="project-box">
+                                <a href="#">
+                                    <img src="assets/components/img_test.jpg" />
+                                    <p>Created a site for a local business using the bootstrap framework.</p>
+                                </a>
+                            </div>
+                            <div class="project-box">
+                                <a href="#">
+                                    <img src="assets/components/img_test.jpg" />
+                                    <p>Created a site for a local business using the bootstrap framework.</p>
+                                </a>
+                            </div>
+                            <div class="project-box">
+                                <a href="#">
+                                    <img src="assets/components/img_test.jpg" />
+                                    <p>Created a site for a local business using the bootstrap framework.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="contain">
+                    <h1>titre</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Deserunt sed quae, quisquam distinctio hic quasi eligendi repellendus tenetur natus? 
+                        Ea ratione dicta tempora tempore sapiente id quis aliquid modi consequuntur!</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>  
+        <script>
+            new fullpage('#fullPage',{
+                autoScrolling : true
+            })
+        </script>
     </body>
 </html>
