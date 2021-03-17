@@ -1,15 +1,16 @@
 <html>
     <head>
         <title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="css/fullpage.css">
         <link rel="stylesheet" type="text/css" href="css/default.css">
     </head>
     <body>
         <div id="fullpage">
             <div class="section">
                 <div class="header">
-                    <img src="assets/background/header_img.jpg" alt="" />
+                    <!--<img src="assets/background/header_img.jpg" alt="" />-->
                     <div class="logo-and-title">
-                        <h1 class="title">Mon PorteFollio</h1>
+                        <h1 class="title"> Bienvenue sur mon PorteFollio</h1>
                     </div>
                 </div>
             </div>
@@ -50,46 +51,68 @@
                 </div>
             </div>
             <div class="section">
-                <div class="contain">
-                    <div class="project">
-                        <h1 class="project-title">Project</h1>
-                        <div class="project-content-box">
-                            <div class="project-box">
-                                <a href="#">
-                                    <img src="assets/components/img_test.jpg" />
-                                    <p>Created a site for a local business using the bootstrap framework.</p>
-                                </a>
-                            </div>
-                            <div class="project-box">
-                                <a href="#">
-                                    <img src="assets/components/img_test.jpg" />
-                                    <p>Created a site for a local business using the bootstrap framework.</p>
-                                </a>
-                            </div>
-                            <div class="project-box">
-                                <a href="#">
-                                    <img src="assets/components/img_test.jpg" />
-                                    <p>Created a site for a local business using the bootstrap framework.</p>
-                                </a>
-                            </div>
-                            <div class="project-box">
-                                <a href="#">
-                                    <img src="assets/components/img_test.jpg" />
-                                    <p>Created a site for a local business using the bootstrap framework.</p>
-                                </a>
-                            </div>
-                            <div class="project-box">
-                                <a href="#">
-                                    <img src="assets/components/img_test.jpg" />
-                                    <p>Created a site for a local business using the bootstrap framework.</p>
-                                </a>
-                            </div>
-                            <div class="project-box">
-                                <a href="#">
-                                    <img src="assets/components/img_test.jpg" />
-                                    <p>Created a site for a local business using the bootstrap framework.</p>
-                                </a>
-                            </div>
+                <div class="project-title"><p>Project</p></div>
+                <div class="slide" data-anchor="slide1">
+                    <div class="project-content-box">
+                        <div class="project-box">
+                            <a href="#">
+                                <img src="assets/components/img_test.jpg" />
+                                <p>Created a site for a local business using the bootstrap framework.</p>
+                            </a>
+                        </div>
+                        <div class="project-box">
+                            <a href="#">
+                                <img src="assets/components/img_test.jpg" />
+                                <p>Created a site for a local business using the bootstrap framework.</p>
+                            </a>
+                        </div>
+                        <div class="project-box">
+                            <a href="#">
+                                <img src="assets/components/img_test.jpg" />
+                                <p>Created a site for a local business using the bootstrap framework.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-anchor="slide2"><div class="project-content-box">
+                    <div class="project-box">
+                        <a href="#">
+                            <img src="assets/components/img_test.jpg" />
+                            <p>Created a site for a local business using the bootstrap framework.</p>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <a href="#">
+                            <img src="assets/components/img_test.jpg" />
+                            <p>Created a site for a local business using the bootstrap framework.</p>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <a href="#">
+                            <img src="assets/components/img_test.jpg" />
+                            <p>Created a site for a local business using the bootstrap framework.</p>
+                        </a>
+                    </div>
+                </div></div>
+                <div class="slide" data-anchor="slide3">
+                    <div class="project-content-box">
+                        <div class="project-box">
+                            <a href="#">
+                                <img src="assets/components/img_test.jpg" />
+                                <p>Created a site for a local business using the bootstrap framework.</p>
+                            </a>
+                        </div>
+                        <div class="project-box">
+                            <a href="#">
+                                <img src="assets/components/img_test.jpg" />
+                                <p>Created a site for a local business using the bootstrap framework.</p>
+                            </a>
+                        </div>
+                        <div class="project-box">
+                            <a href="#">
+                                <img src="assets/components/img_test.jpg" />
+                                <p>Created a site for a local business using the bootstrap framework.</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -103,10 +126,15 @@
                 </div>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>  
+        <script src="js/fullpage.min.js"></script>  
         <script>
             new fullpage('#fullPage',{
-                autoScrolling : true
+                scrollHorizontally: true,
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Home', 'Desc', 'Project', 'Footer'],
+                slidesNavigation: true
             })
         </script>
     </body>

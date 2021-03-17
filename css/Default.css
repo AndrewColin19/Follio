@@ -9,7 +9,8 @@ html body{
 }
 
 body{
-    background: url("../assets/background/home_bg.jpg");
+    /*background: url("../assets/background/home_bg.jpg");*/
+    background-color: #C7C7D0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -19,6 +20,9 @@ body{
 }
 ::-webkit-scrollbar { width: 0 !important }
 
+a{
+    text-decoration: none !important;
+}
 .section .contain{
     width: 100%;
     height: 100%;
@@ -29,6 +33,11 @@ body{
     height: 100%;
 }
 /*header*/
+.header{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
 .header img{
     width: 100%;
     height: 100%;
@@ -38,7 +47,7 @@ body{
     position: absolute;
     color:white;
     top: 50%;
-    left: 40%;
+    left: 35%;
 }
 /*fin header*/
 /*desc bts*/
@@ -82,29 +91,21 @@ body{
 }
 /*fin desc bts*/
 /*project*/
-.project{
-    width: 80%;
-    color: white;
-    background-color:  rgba(0, 0, 0, 0.3);
-    border:1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+.project-title{
+    align-self: center;
+    position: absolute;
+
 }
-.project .project-title{
-    margin: 2% auto;
+.project-title p{
+    font-size: 50px;
 }
-.project .project-content-box{
+.project-content-box{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.project .project-box {
+.project-content-box .project-box {
     color: #FFF;
     background-color: rgba(255, 255, 255, 0.075);
     width: 346px;
@@ -115,17 +116,17 @@ body{
     overflow: hidden;
     transition: 0.5s all;
 }
-.project .project-box a{
+.project-content-box .project-box a{
     text-decoration: none;
     color: white;
 }
   
-.project .project-box img {
+.project-content-box .project-box img {
     width: 100%;
     height: auto;
 }
   
-.project .project-box p {
+.project-content-box .project-box p {
     padding-top: 20px;
     text-align: center;
 }
