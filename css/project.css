@@ -47,16 +47,122 @@ body{
     transform: translate(-50%, -50%);
     animation: 4s linear homeTitle;
 }
-/*.bg1{
-    background-image: url("../assets/background/img_test.jpg");
-}*/
+.bg1{
+    /*background-image: url("../assets/background/img_test.jpg");*/
+    background-color: crimson;
+}
 /*---------------
 --FIN SECTION 1--
 ---------------*/
 /*-----------
 --SECTION 2--
 -----------*/
+.bg2{
+    background-color: darkcyan;
+}
+
 .project-context{
+    position: relative;
+    text-align: center;
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.project-context .title{
+    margin-bottom: 5%;
+}
+.project-context .logo{
+    margin-bottom: 5%;
+    width: 20%;
+}
+/*---------------
+--FIN SECTION 2--
+---------------*/
+/*-----------
+--SECTION 3--
+-----------*/
+.bg3{
+    background-color: darkgray;
+}
+.box-documents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    padding: 10px;
+}
+.project-contrainte{
+    text-align: justify;
+    padding: 10px;
+}
+.project-contrainte .title{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.project-utilisation .title{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.project-utilisation{
+    padding: 10px;
+}
+/*---------------
+--FIN SECTION 3--
+---------------*/
+/*-----------
+--SECTION 4--
+-----------*/
+.bg4{
+    background-color: darkkhaki;
+}
+.bg4 .title{
+    position: relative;
+    top :10%;
+    text-align: center;
+}
+.box-ressources{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding:20px;
+}
+.box-ressources .project-ressources{
+    text-align: justify;
+    width: 50%;
+    margin: 0 2%;
+    padding: 10px;
+    height: 100%;
+}
+/*---------------
+--FIN SECTION 4--
+---------------*/
+/*-----------
+--SECTION 5--
+-----------*/
+/*---------------
+--FIN SECTION 5--
+---------------*/
+/*-----------
+--SECTION 6--
+-----------*/
+.bg6{
+    background-color: darkslategrey;
+}
+.project-download{
     position: relative;
     text-align: center;
     width: 80%;
@@ -64,7 +170,8 @@ body{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    border: 1px solid red; 
 }
 /*---------------
---FIN SECTION 2--
+--FIN SECTION 6--
 ---------------*/

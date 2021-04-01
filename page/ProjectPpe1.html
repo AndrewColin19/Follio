@@ -8,45 +8,114 @@
         <div class="nav">
             <button class="scroll-section" value="0">Home</button>
             <button class="scroll-section" value="1">Context</button>
-            <button class="scroll-section" value="2">Ressource</button>
-            <button class="scroll-section" value="3">Documents</button>
+            <button class="scroll-section" value="2">Documents</button>
+            <button class="scroll-section" value="3">Ressources</button>
             <button class="scroll-section" value="4">Telechargement</button>
         </div>
         <div class="section parallax bg1">
             <div class="header">
                 <div class="logo-and-title">
-                    <h1 class="title">Project Test</h1>
+                    <h1 class="title">PPE4 SLAM PROJET Médecins
+                        Partie 2 : consultation des médecins dans un mobile android</h1>
                 </div>
             </div>
         </div>
         <div class="section parallax bg2">
             <div class="project-context">
-                <h1>context</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, 
-                    a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
-                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
-                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
-                    (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
-                    This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h1 class="title">contexte</h1>
+                <img class="logo" src="../assets/components/logo gsb.png" alt="gsb logo"/>
+                <p>Le laboratoire Galaxy Swiss Bourdin (GSB) est amené dans ses différentes activités à
+                    contacter les médecins installés, par exemple les visiteurs médicaux du laboratoire se
+                    déplacent afin de présenter les nouveaux produits pharmaceutiques.
+                    Une base de données de médecins est utilisée dans ces différents processus. Cette base de
+                    données évolue fréquemment, ceci à cause de départ à la retraite de médecins ou d’installation
+                    de nouveaux praticiens. Les applications doivent intégrer ces évolutions des données.
+                    Il a été décidé de confier à une société de services informatiques la responsabilité de
+                    développer deux applications web donnant accès aux informations de la base de données.</p>
             </div>
             
         </div>
         <div class="section parallax bg3">
-            <span>Ressource</span>
+            <div class="box-documents">
+                <div class="project-contrainte">
+                    <h1 class="title">Documents</h1>
+                    <p>Un certain nombre de contraintes ont été fixées :</br>
+                        - Le développement sera réalisé en Java. Le système d'exploitation cible sera android 4
+                        (API 15).</br>
+                        - Dans un premier temps, l'application utilisera un service Web de test fourni et décrit ci
+                        dessous.</br>
+                        - Dans un deuxième temps, vous créerez le service Web utilisant la base de données des
+                        médecins : il sera intégré à l’application back office réalisé en PHP Zend.</br>
+                        - Les informations exposées indiqueront simplement les nom, prénom, adresse,
+                        téléphone et spécialité médicale complémentaire des médecins généralistes</p>
+                </div>
+                <div class="project-utilisation">
+                    <h2 class="title">Utilisation</h2>
+                    <p>Dès son lancement, l'application affiche une liste de départements.</br>
+                        Un appui sur un des numéros de département déclenche l'affichage de la liste des médecins du
+                        département.</br>
+                        Dans cette phase de prototypage, le design est libre</p>
+                </div>
+            </div>
         </div>
-        <div class="section parallax bg3">
-            <span>Document</span>
+        <div class="section parallax bg4">
+            <h1 class="title">Ressources</h1>
+            <div class="box-ressources">
+                <div class="project-ressources">
+                    <p>Le service Web
+                        Le service Web de test est à l'url : http://denis.brodard.free.fr</br>
+                        Il propose les deux requêtes suivantes :</br>
+                        A – liste des départements :</br>
+                        http://denis.brodard.free.fr/dep.php
+                        qui retourne un flux XML de ce format :</br>
+                        <pre>
+                            &lt;Departements&gt;
+                                &lt;Departement&gt;
+                                    &lt;num&gt;75&lt;/num&gt;
+                                &lt;/Departement&gt;
+                                &lt;Departement&gt;
+                                    &lt;num&gt;95&lt;/num&gt;
+                                &lt;/Departement&gt;
+                            &lt;/Departements&gt;
+                        </pre>
+                    </p>
+                </div>
+                <div class="project-ressources">
+                    <p>B – liste des médecins (par exemple pour le département 75):</br>
+                     http://denis.brodard.free.fr/med.php?loic=1&dep=75</br>
+                    qui retourne un flux XML de ce format :</br>
+                        <pre>
+                            &lt;Medecins&gt;
+                                &lt;Medecin&gt;
+                                    &lt;nom&gt;Daminel&lt;/nom&gt;
+                                    &lt;prenom&gt;Elise&lt;/prenom&gt;
+                                    &lt;adresse&gt;12 rue primer 75012 Paris&lt;/adresse&gt;
+                                    &lt;specialite&gt;Rhumato&lt;/specialite&gt;
+                                    &lt;tel&gt;01 66 70 36 06&lt;/tel&gt;
+                                &lt;/Medecin&gt;
+                                &lt;Medecin&gt;
+                                    &lt;nom>Dupont&lt;/nom&gt;
+                                    &lt;prenom>Alain&lt;/prenom&gt;
+                                    &lt;adresse>12 rue taine 75012 Paris&lt;/adresse&gt;
+                                    &lt;specialite/&gt;
+                                    &lt;tel>01 43 70 36 06&lt;/tel&gt;
+                                &lt;/Medecin&gt;
+                            &lt;/Medecins&gt;
+                        </pre>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="section parallax bg3">
-            <span>download</span>
+        <div class="section-description">
+
+        </div>
+        <div class="section parallax bg6">
+            <div class="slide"></div>
+            <div class="project-download">
+                <h1>Téléchrager le code du project</h1>
+                <a href="../assets/AppIcons.zip" download="proposed_file_name">Download</a>
+                <a href="#">From GitHub</a>
+            </div>
         </div>
         <script type="text/javascript" src="../js/main.js"></script>
     </body>
