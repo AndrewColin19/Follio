@@ -48,7 +48,7 @@ body{
     animation: 4s linear homeTitle;
 }
 .bg1{
-    background-image: url("../assets/background/img_test.jpg");
+    background-image: url("../assets/background/home/img_test.jpg");
 }
 /*---------------
 --FIN SECTION 1--
@@ -57,7 +57,7 @@ body{
 --SECTION 2--
 -----------*/
 .bg2{
-    background-image: url("../assets/background/section3_bg.jpg");
+    background-image: url("../assets/background/home/section3_bg.jpg");
 }
 .desc{ 
     position: relative;
@@ -136,7 +136,7 @@ body{
 --SECTION 3--
 -----------*/
 .bg3{
-    background-image: url("../assets/background/bg3.jpg");
+    background-image: url("../assets/background/home/bg3.jpg");
 }
 .contain-project{
     position: relative;

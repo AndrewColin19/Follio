@@ -48,8 +48,8 @@ body{
     animation: 4s linear homeTitle;
 }
 .bg1{
-    /*background-image: url("../assets/background/img_test.jpg");*/
-    background-color: crimson;
+    /*background-color: #56cfe1;*/
+    background-color: #023e8a;
 }
 /*---------------
 --FIN SECTION 1--
@@ -58,7 +58,8 @@ body{
 --SECTION 2--
 -----------*/
 .bg2{
-    background-color: darkcyan;
+    /*background-color: #48bfe3;*/
+    background-color: #0077b6;
 }
 
 .project-context{
@@ -84,7 +85,7 @@ body{
 --SECTION 3--
 -----------*/
 .bg3{
-    background-color: darkgray;
+    background-color: #4ea8de;
 }
 .box-documents{
     display: flex;
@@ -121,7 +122,7 @@ body{
 --SECTION 4--
 -----------*/
 .bg4{
-    background-color: darkkhaki;
+    background-color: #5390d9;
 }
 .bg4 .title{
     position: relative;
@@ -153,6 +154,43 @@ body{
 /*-----------
 --SECTION 5--
 -----------*/
+.bg5{
+    background-color: #5e60ce;
+}
+.bg5 .title{
+    position: relative;
+    top :10%;
+    text-align: center;
+}
+.content-view{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.content-view .view{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content-view .view img{
+    height: 100%;
+    width: auto;
+}
+.content-view .desc-view{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
 /*---------------
 --FIN SECTION 5--
 ---------------*/
@@ -160,7 +198,7 @@ body{
 --SECTION 6--
 -----------*/
 .bg6{
-    background-color: darkslategrey;
+    background-color: #6930c3;
 }
 .project-download{
     position: relative;
@@ -170,7 +208,6 @@ body{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    border: 1px solid red; 
 }
 /*---------------
 --FIN SECTION 6--
